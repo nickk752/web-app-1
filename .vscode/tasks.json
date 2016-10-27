@@ -1,27 +1,10 @@
 {
-  "version": "0.1.0",
-  "command": "npm",
-  "isShellCommand": true,
-  "suppressTaskName": true,
-  "tasks": [
-    {
-      // Build task, Ctrl+Shift+B
-      // "npm install --loglevel info"
-      "taskName": "install",
-      "isBuildCommand": true,
-      "args": ["install", "--loglevel", "info"]
-    },
-    {
-      // Test task, Ctrl+Shift+T
-      // "npm test"
-      "taskName": "test",
-      "isTestCommand": true,
-      "args": ["test"]
-    },
-    {
-      // "npm run lint"
-      "taskName": "lint",
-      "args": ["run", "lint"]
-    }
-  ]
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "tsc",
+    "isShellCommand": true,
+    "args": ["-p", "."],
+    "showOutput": "silent",
+    "problemMatcher": "$tsc"
 }
