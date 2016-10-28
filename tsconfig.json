@@ -1,9 +1,15 @@
 {
     "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "jsx": "react",
         "target": "es2015",
         "module": "commonjs",
         "sourceMap": true
     },
+    "include": [
+        "src/**/*"
+    ],
     "exclude": [
         "node_modules"
     ]
